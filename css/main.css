@@ -72,6 +72,10 @@
   #info .row {
     padding: 21px 14px;
   }
+
+  #info .container{
+    padding: 20px 0;
+  }
 /*DRIVER */
   #driver {
     background-image: url(../assets/images/conduce.jpg);
