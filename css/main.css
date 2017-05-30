@@ -161,6 +161,10 @@ footer * {
     color: #fff;
 }
 
+footer a:hover {
+    color: #fff;
+}
+
 .bg-gris {
     background-color: #2b2b2b;
 }
@@ -181,7 +185,7 @@ footer img {
 
 #footer-icons,
 #footer-logo {
-    display: inline-table!important;
+    display: inline-table;
 }
 
 .row {
