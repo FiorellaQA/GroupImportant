@@ -1,127 +1,174 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway');
 * {
-  box-sizing: border-box;
-  margin: 0;
-  font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
+
 /*GENERAL*/
+
 .color-lab {
-  background-color: #f7b617;
-  color: #fff;
+    background-color: #f7b617;
+    color: #fff;
 }
-  h3, [type="button"], [type="submit"] {
+
+h3,
+[type="button"],
+[type="submit"] {
     font-family: 'Raleway', sans-serif;
-  }
-#driver *, #info *, #rate * {
-  color: #fff;
 }
+
+#driver *,
+#info *,
+#rate * {
+    color: #fff;
+}
+
+
 /*HEADER*/
-  header .container-fluid {
+
+header .container-fluid {
     padding: 0;
-  }
-  header [class*="col-sm-push-"] {
+}
+
+header [class*="col-sm-push-"] {
     padding: 28px 0;
-  }
-  header .row > div:nth-child(2) {
+}
+
+header .row > div:nth-child(2) {
     border-top: 1px solid #e5e5e5;
-  }
-  header span {
+}
+
+header span {
     padding: 0!important;
     margin: 0!important;
     color: #888888;
     transform: scaleX(1.7);
-  }
-  header #menu-item {
+}
+
+header #menu-item {
     font-family: 'Open Sans', sans-serif;
-  }
-  header #menu-item li > a {
+}
+
+header #menu-item li > a {
     color: #000;
     padding-top: 28px;
     padding-bottom: 28px;
-  }
+}
+
 
 /*BANNER */
+
 #banner {
-  background-image: url("../images/taxi.jpg");
-  background-repeat: no-repeat;
-  height: 560px;
-  background-size: cover;
+    background-image: url("../images/taxi.jpg");
+    background-repeat: no-repeat;
+    height: 560px;
+    background-size: cover;
 }
-#banner *, #download-app [class*="col-xs-10"] {
-  font-family: 'Raleway', sans-serif;
+
+#banner *,
+#download-app [class*="col-xs-10"] {
+    font-family: 'Raleway', sans-serif;
 }
+
 #banner .container {
-  padding-right: 0;
+    padding-right: 0;
 }
-#download-app [class*="col-xs-10"]{
-  top: 155px;
-  padding: 35px;
+
+#download-app [class*="col-xs-10"] {
+    top: 155px;
+    padding: 35px;
 }
+
 #download-app .btn-download {
-  padding-top: 35px;
+    padding-top: 35px;
 }
+
 #download-app [type="button"] {
-  font-size: 19px;
+    font-size: 19px;
 }
+
+
 /*INFO*/
+
 #info .container > div:first-child {
-  border: 1px solid #fff;
-  margin: 14px;
+    border: 1px solid #fff;
+    margin: 14px;
 }
+
 #info .row {
-  padding: 21px 14px;
+    padding: 21px 14px;
 }
-#info .container{
-  padding: 20px 0;
+
+#info .container {
+    padding: 20px 0;
 }
+
+
 /*DRIVER */
+
 #driver {
-  background-image: url(../images/conduce.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 259px;
+    background-image: url(../images/conduce.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 259px;
 }
+
 #driver > .container {
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.33);
-  padding: 30px 14px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.33);
+    padding: 30px 14px;
 }
-#driver p, #driver [type="button"] {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
-}
+
+#driver p,
 #driver [type="button"] {
-  border: none;
-  border-radius: 12px;
-  padding: 9px 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
 }
+
+#driver [type="button"] {
+    border: none;
+    border-radius: 12px;
+    padding: 9px 14px;
+}
+
+
 /*TARIFA*/
+
 #rate {
     padding: 56px 0;
-  }
-  .form-input {
+}
+
+.form-input {
     display: inline-block;
     padding: 7px 14px;
     color: #fff;
     border: 1px solid #fff;
     border-radius: 7px;
     margin: 14px;
-  }
-  #rate [type="submit"] {
+}
+
+#rate [type="submit"] {
     color: #000;
     margin: 21px 0;
-  }
-  input::placeholder {
+}
+
+input::placeholder {
     color: #fff;
-  }
-  #rate p {
+}
+
+#rate p {
     font-size: 18px;
-  }
-  .none{
+}
+
+.none {
     display: none;
-  }
+}
+
+
 /*FOOTER*/
+
 footer {
     padding: 64px 0;
 }
@@ -161,119 +208,123 @@ footer img {
     padding: 0;
     margin: 0;
 }
+
+
 /* Small devices (tablets, 768px and up) */
-@media (min-width:768px)  {
-  /*GENERAL*/
-  h3 {
-    font-size: 28px;
-  }
-  p {
-    font-size: 20px;
-  }
-  /*HEADER*/
+
+@media (min-width:768px) {
+    /*GENERAL*/
+    h3 {
+        font-size: 28px;
+    }
+    p {
+        font-size: 20px;
+    }
+    /*HEADER*/
     #logo {
-      text-align: left;
+        text-align: left;
     }
     header .row {
-      display: flex;
-      align-items: center;
+        display: flex;
+        align-items: center;
     }
     header .row > div:nth-child(2) {
-      border: none;
+        border: none;
     }
     header ul > li {
-      font-size: 1.3em;
+        font-size: 1.3em;
     }
-  /*BANNER*/
-  #banner {
-    background-position: center 91%;
-    height: 637px;
-  }
-  #banner .container {
-    margin: 0;
-    width: 100%;
-  }
-  #logo-blanco {
-    top: 21px;
-  }
-  #banner .line > hr{
-    width: 103px;
-    display: inline-block;
-    height: 20px;
-    background-color: rgba(255, 255, 255, 0);
-    border: none;
-    border-bottom: 1px solid #fff;
-    margin: 2px 40px;
-  }
-  /*INFO*/
-  #info .container, #info .container > div:first-child {
-    margin-left: 0;
-    padding-left: 0;
-    border-left: none;
-  }
-  #info img {
-    width: 21em;
-  }
-  /*DRIVER*/
-  #driver {
-    height: 448px;
-    background-position-y: 58%;
-  }
-  #driver > .container {
-    background: none;
-    margin-right: 0;
-    padding: 0;
-  }
-  #driver .row {
-    width: 40%;
-    height: 100%;
-    float: right;
-    margin-right: 0;
-    padding-top: 77px;
-    background-color: rgba(0, 0, 0, 0.33);
-  }
-  /*RATE*/
-.form-input {
-      width: 50%;
+    /*BANNER*/
+    #banner {
+        background-position: center 91%;
+        height: 637px;
+    }
+    #banner .container {
+        margin: 0;
+        width: 100%;
+    }
+    #logo-blanco {
+        top: 21px;
+    }
+    #banner .line > hr {
+        width: 103px;
+        display: inline-block;
+        height: 20px;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        border-bottom: 1px solid #fff;
+        margin: 2px 40px;
+    }
+    /*INFO*/
+    #info .container,
+    #info .container > div:first-child {
+        margin-left: 0;
+        padding-left: 0;
+        border-left: none;
+    }
+    #info img {
+        width: 21em;
+    }
+    /*DRIVER*/
+    #driver {
+        height: 448px;
+        background-position-y: 58%;
+    }
+    #driver > .container {
+        background: none;
+        margin-right: 0;
+        padding: 0;
+    }
+    #driver .row {
+        width: 40%;
+        height: 100%;
+        float: right;
+        margin-right: 0;
+        padding-top: 77px;
+        background-color: rgba(0, 0, 0, 0.33);
+    }
+    /*RATE*/
+    .form-input {
+        width: 50%;
     }
     input::placeholder {
-      color: #fff;
+        color: #fff;
     }
-    input:focus{
-      outline: none;
+    input:focus {
+        outline: none;
     }
     .box-btn {
-      width: 65%;
+        width: 65%;
     }
     #map {
-      /*width: 100%;*/
-      height: 60vh;
+        /*width: 100%;*/
+        height: 60vh;
     }
-    .contentMap{
-      border: 1px solid #fff;
-      padding: 1%;
+    .contentMap {
+        border: 1px solid #fff;
+        padding: 1%;
     }
     #map * {
-      color: #000;
+        color: #000;
     }
-    .none{
-      display: none;
+    .none {
+        display: none;
     }
-  /*FOOTER*/
-  #footer-first {
-    height: 60vh;
-  }
-  #footer-first ul {
-    position: absolute;
-    bottom: 0;
-  }
-  #footer-logo * {
-    display: block;
-  }
-  #footer-icons {
-    display: none!important;
-  }
-  #footer-logo {
-    top: 245px;
-  }
+    /*FOOTER*/
+    #footer-first {
+        height: 60vh;
+    }
+    #footer-first ul {
+        position: absolute;
+        bottom: 0;
+    }
+    #footer-logo * {
+        display: block;
+    }
+    #footer-icons {
+        display: none!important;
+    }
+    #footer-logo {
+        top: 245px;
+    }
 }
