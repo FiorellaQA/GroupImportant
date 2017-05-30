@@ -11,7 +11,7 @@
     background-color: #f7b617;
     color: #fff;
   }
-  h3, [type="button"] {
+  h3, [type="button"], [type="submit"] {
     font-family: 'Raleway', sans-serif;
   }
   .w-700 {
@@ -106,7 +106,7 @@
     border-radius: 7px;
     margin: 14px;
   }
-  #rate [type="button"] {
+  #rate [type="submit"] {
     color: #000;
     margin: 21px 0;
   }
@@ -212,13 +212,19 @@
     .form-input {
       width: 50%;
     }
+    input::placeholder {
+      color: #fff;
+    }
     .box-btn {
       width: 65%;
     }
     #map {
-      width: 100%;
+      /*width: 100%;*/
       height: 60vh;
+    }
+    .contentMap{
       border: 1px solid #fff;
+      padding: 1%;
     }
     #map * {
       color: #000;
