@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lab Car</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css"><!-- CSS de Bootstrap -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"><!-- CSS de Bootstrap -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <link rel="icon" href="http://code.nixsiow.com/assets/images/Skills-Icons/Frameworks-Icon.png">
+    <script src="assets/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/dist/sweetalert.css">
   </head>
   <body>
     <!-- TARIFA  -->
@@ -31,22 +33,20 @@
                 <button type="submit" id="trazar-ruta" class="btn btn-default w-700">!TRAZAR RUTA!</button>
               </div>
             </form>
-            <div id="tarifa"></div>
           </div>
           <div class="col-sm-6 hidden-xs">
             <div class="contentMap">
               <div id="map"></div>
             </div>
           </div>
-          
         </div>
       </div>
     </section>
     <!-- jQuery (necesario para que funcionen los componentes de Bootstrap) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Incluir todos tus scripts apartir de este punto -->
-    <script src="js/app.js"></script>
+    <script src="assets/js/app.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPYOLE28FgNpPeQ7sIlgS9saT5h6p5jys&callback=initMap&libraries=places"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
   </body>
 </html>

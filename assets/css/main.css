@@ -110,8 +110,14 @@
     color: #000;
     margin: 21px 0;
   }
+  input::placeholder {
+    color: #fff;
+  }
   #rate p {
     font-size: 18px;
+  }
+  .none{
+    display: none;
   }
 /*FOOTER*/
   footer {
@@ -215,6 +221,9 @@
     input::placeholder {
       color: #fff;
     }
+    input:focus{
+      outline: none;
+    }
     .box-btn {
       width: 65%;
     }
@@ -228,6 +237,9 @@
     }
     #map * {
       color: #000;
+    }
+    .none{
+      display: none;
     }
   /*FOOTER*/
     #footer-first {

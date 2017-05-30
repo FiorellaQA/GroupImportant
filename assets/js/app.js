@@ -51,32 +51,41 @@ document.getElementById("form").addEventListener("submit", function(e){
 
   var directionsService = new google.maps.DirectionsService;
   var directionsDisplay = new google.maps.DirectionsRenderer;
-    
+
   directionsService.route({
       origin: inputPartida.value,
       destination: inputDestino.value,
       travelMode: 'DRIVING'
       }, function(response, status){
         if(status === 'OK'){
-          var tarifa = document.getElementById("tarifa");
           var distancia = Number((response.routes[0].legs[0].distance.text.replace("km","")).replace(",","."));
-          tarifa.classList.remove("none");
-
           var costo = distancia*1.75;
-          console.log(costo);
 
-          if (costo < 4){
-            tarifa.innerHTML="S/. 4";
-          }else{
-            tarifa.innerHTML="S/. " + parseInt(costo);
-            console.log(response.routes[0].legs[0].distance.text);
-          }
+          (function print(){
+            swal({
+              title: "Tarifa" + "<hr>",
+              text: "<div style='text-align: left;'>"+
+                      "<strong>Origen: </strong>" +
+                      "<p>" + inputPartida.value  +"</p>" +
+                      "<strong>Llegada: </strong>" +
+                      "<p>" + inputDestino.value  +"</p>" +
+                      "<hr>" +
+                      "<strong>Costo: S/. " + parseInt(costo) +"</strong>" +
+                    "</div>",
+              html: true,
+              type: "success",
+              confirmButtonColor: "#DD6B55",
+              confirmButtonText: "Aceptar",
+            });
+          })();
+
+          //console.log(response.routes[0].legs[0].distance.text);
 
           directionsDisplay.setDirections(response);
           // miUbicacion.setMap(null);
         }else{
-          window.alert("No encontramos una ruta.");
+          sweetAlert("No encontramos una ruta.","Verifica ingresando ambos datos", "error");
         }
       });
-  directionsDisplay.setMap(map)
+  directionsDisplay.setMap(map);
 });
