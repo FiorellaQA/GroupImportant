@@ -14,9 +14,6 @@
   h3, [type="button"] {
     font-family: 'Raleway', sans-serif;
   }
-  .w-700 {
-    font-weight: 700;
-  }
   #driver *, #info *, #rate * {
     color: #fff;
   }
