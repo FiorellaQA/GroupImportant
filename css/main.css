@@ -21,20 +21,24 @@
     color: #fff;
   }
 /*HEADER*/
-  header .row {
-    padding: 28px 21px;
+  header .container-fluid {
+    padding: 0;
   }
-
-  header #menu{
-    font-size: 21px;
-    color: #888888;
+  header [class*="col-sm-push-"] {
+    padding: 28px 0;
   }
-
-  header #menu-item {
+  header .row > div:nth-child(2) {
     border-top: 1px solid #e5e5e5;
+  }
+  header span {
+    padding: 0!important;
+    margin: 0!important;
+    color: #888888;
+    transform: scaleX(1.7);
+  }
+  header #menu-item {
     font-family: 'Open Sans', sans-serif;
   }
-
   header #menu-item li > a {
     color: #000;
     padding-top: 28px;
@@ -155,10 +159,14 @@
       text-align: left;
     }
     header .row {
-      padding: 42px 21px;
+      display: flex;
+      align-items: center;
+    }
+    header .row > div:nth-child(2) {
+      border: none;
     }
     header ul > li {
-      font-size: 17px;
+      font-size: 1.3em;
     }
   /*BANNER*/
     #banner {
