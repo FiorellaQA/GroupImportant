@@ -121,8 +121,18 @@
   }
   footer * {
     color: #fff;
+<<<<<<< HEAD
   }
   .bg-gris {
+=======
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+.bg-gris {
+>>>>>>> Footer
     background-color: #2b2b2b;
   }
   .flex {
@@ -135,11 +145,22 @@
   footer img {
     margin: 14px 0;
     width: 117px;
+<<<<<<< HEAD
   }
   #footer-icons, #footer-logo {
     display: inline-table!important;
   }
   .row {
+=======
+}
+
+#footer-icons,
+#footer-logo {
+    display: inline-table;
+}
+
+.row {
+>>>>>>> Footer
     padding: 0;
     margin: 0;
   }
