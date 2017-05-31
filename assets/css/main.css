@@ -1,213 +1,206 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway');
-* {
-    box-sizing: border-box;
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-}
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        font-family: 'Open Sans', sans-serif;
+    }
+    /*GENERAL*/
+
+    .color-lab {
+        background-color: #f7b617;
+    }
+
+    h3,
+    [type="button"],
+    [type="submit"] {
+        font-family: 'Raleway', sans-serif;
+    }
+
+    #driver *,
+    #info *,
+    #rate *,
+    footer * {
+        color: #fff;
+    }
+
+    .bg-gris {
+        background-color: #2b2b2b;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    /*HEADER*/
+
+    header .container-fluid {
+        padding: 0;
+    }
+
+    header [class*="col-sm-push-"] {
+        padding: 28px 0;
+    }
+
+    header .row > div:nth-child(2) {
+        border-top: 1px solid #e5e5e5;
+    }
+
+    header span {
+        padding: 0!important;
+        margin: 0!important;
+        color: #888888;
+        transform: scaleX(1.7);
+    }
+
+    header #menu-item {
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    header #menu-item li > a {
+        color: #000;
+        padding-top: 28px;
+        padding-bottom: 28px;
+    }
 
 
-/*GENERAL*/
+    /*BANNER */
 
-.color-lab {
-    background-color: #f7b617;
-    color: #fff;
-}
+    #banner {
+        background-image: url("../images/taxi.jpg");
+        background-repeat: no-repeat;
+        height: 560px;
+        background-size: cover;
+    }
 
-h3,
-[type="button"],
-[type="submit"] {
-    font-family: 'Raleway', sans-serif;
-}
+    #banner *,
+    #download-app [class*="col-xs-10"] {
+        font-family: 'Raleway', sans-serif;
+    }
 
-#driver *,
-#info *,
-#rate * {
-    color: #fff;
-}
+    #banner .container {
+        padding-right: 0;
+    }
 
+    #download-app [class*="col-xs-10"] {
+        top: 155px;
+        padding: 35px;
+    }
 
-/*HEADER*/
+    #download-app .btn-download {
+        padding-top: 35px;
+    }
 
-header .container-fluid {
-    padding: 0;
-}
-
-header [class*="col-sm-push-"] {
-    padding: 28px 0;
-}
-
-header .row > div:nth-child(2) {
-    border-top: 1px solid #e5e5e5;
-}
-
-header span {
-    padding: 0!important;
-    margin: 0!important;
-    color: #888888;
-    transform: scaleX(1.7);
-}
-
-header #menu-item {
-    font-family: 'Open Sans', sans-serif;
-}
-
-header #menu-item li > a {
-    color: #000;
-    padding-top: 28px;
-    padding-bottom: 28px;
-}
+    #download-app [type="button"] {
+        font-size: 19px;
+    }
 
 
-/*BANNER */
+    /*INFO*/
 
-#banner {
-    background-image: url("../images/taxi.jpg");
-    background-repeat: no-repeat;
-    height: 560px;
-    background-size: cover;
-}
+    #info .container > div:first-child {
+        border: 1px solid #fff;
+        margin: 14px;
+    }
 
-#banner *,
-#download-app [class*="col-xs-10"] {
-    font-family: 'Raleway', sans-serif;
-}
+    #info .row {
+        padding: 21px 14px;
+    }
 
-#banner .container {
-    padding-right: 0;
-}
-
-#download-app [class*="col-xs-10"] {
-    top: 155px;
-    padding: 35px;
-}
-
-#download-app .btn-download {
-    padding-top: 35px;
-}
-
-#download-app [type="button"] {
-    font-size: 19px;
-}
+    #info .container {
+        padding: 20px 0;
+    }
 
 
-/*INFO*/
+    /*DRIVER */
 
-#info .container > div:first-child {
-    border: 1px solid #fff;
-    margin: 14px;
-}
+    #driver {
+        background-image: url(../images/conduce.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 259px;
+    }
 
-#info .row {
-    padding: 21px 14px;
-}
+    #driver > .container {
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.33);
+        padding: 30px 14px;
+    }
 
-#info .container {
-    padding: 20px 0;
-}
+    #driver p,
+    #driver [type="button"] {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+    }
 
-
-/*DRIVER */
-
-#driver {
-    background-image: url(../images/conduce.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 259px;
-}
-
-#driver > .container {
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.33);
-    padding: 30px 14px;
-}
-
-#driver p,
-#driver [type="button"] {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-}
-
-#driver [type="button"] {
-    border: none;
-    border-radius: 12px;
-    padding: 9px 14px;
-}
+    #driver [type="button"] {
+        border: none;
+        border-radius: 12px;
+        padding: 9px 14px;
+    }
 
 
-/*TARIFA*/
+    /*TARIFA*/
 
-#rate {
-    padding: 56px 0;
-}
+    #rate {
+        padding: 56px 0;
+    }
 
-.form-input {
-    display: inline-block;
-    padding: 7px 14px;
-    color: #fff;
-    border: 1px solid #fff;
-    border-radius: 7px;
-    margin: 14px;
-}
+    .form-input {
+        display: inline-block;
+        padding: 7px 14px;
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: 7px;
+        margin: 14px;
+    }
 
-#rate [type="submit"] {
-    color: #000;
-    margin: 21px 0;
-}
+    #rate [type="submit"] {
+        color: #000;
+        margin: 21px 0;
+    }
 
-input::placeholder {
-    color: #fff;
-}
+    input::placeholder {
+        color: #fff;
+    }
 
-#rate p {
-    font-size: 18px;
-}
+    #rate p {
+        font-size: 18px;
+    }
 
-.none {
-    display: none;
-}
+    .none {
+        display: none;
+    }
 
 
-/*FOOTER*/
+    /*FOOTER*/
 
-footer {
-    padding: 64px 0;
-}
+    footer {
+        padding: 64px 0;
+    }
 
-footer * {
-    color: #fff;
-}
+    footer a:hover {
+        color: #fff;
+    }
 
-footer a:hover {
-    color: #fff;
-}
+    footer ul > li {
+        padding: 14px 4px;
+    }
 
-.bg-gris {
-    background-color: #2b2b2b;
-}
+    footer img {
+        margin: 14px 0;
+        width: 117px;
+    }
 
-.flex {
-    display: flex;
-    justify-content: space-around;
-}
+    #footer-icons,
+    #footer-logo {
+        display: inline-table;
+    }
 
-footer ul > li {
-    padding: 14px 0;
-}
-
-footer img {
-    margin: 14px 0;
-    width: 117px;
-}
-
-#footer-icons,
-#footer-logo {
-    display: inline-table;
-}
-
-.row {
-    padding: 0;
-    margin: 0;
-}
+    .row {
+        padding: 0;
+        margin: 0;
+    }
 
 
 /* Small devices (tablets, 768px and up) */
@@ -297,12 +290,11 @@ footer img {
         width: 65%;
     }
     #map {
-        /*width: 100%;*/
         height: 60vh;
     }
     .contentMap {
         border: 1px solid #fff;
-        padding: 1%;
+        padding: 2%;
     }
     #map * {
         color: #000;
@@ -311,20 +303,14 @@ footer img {
         display: none;
     }
     /*FOOTER*/
-    #footer-first {
-        height: 60vh;
-    }
-    #footer-first ul {
-        position: absolute;
-        bottom: 0;
-    }
-    #footer-logo * {
-        display: block;
-    }
-    #footer-icons {
-        display: none!important;
+    footer div:nth-child(2) {
+      display: flex;
+      align-items: flex-end;
     }
     #footer-logo {
-        top: 245px;
+        display: block;
+    }
+    footer img {
+      width: 130px;
     }
 }
