@@ -18,16 +18,5 @@ Este proyecto es realizado con la finalidad de explotar lo aprendido durante el 
   - FRAMEWORK BOOTSTRAP
   - ICON MOONS
 ```
-## Muestra del Proyecto
-+ Mobile  
-  ![mobile](assets/screenshot/mobile-labcar.png)
-  
-+ Mobile with nav 
-  ![mobile](assets/screenshot/nav-mobile-labcar.png)
-  
- + Desktop
-  ![mobile](assets/screenshot/desktop-labcar.png)
- 
- 
 
-`Nota`: Este proyecto está subido al GH-PAGES [aquí](https://mgmp2.github.io/LabCar/).
+`Nota`: Este proyecto está subido al GH-PAGES [aquí](https://mgmp2.github.io/GroupImportant/).
